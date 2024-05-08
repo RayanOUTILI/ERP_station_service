@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# ERP Station Service
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet est un ERP (Enterprise Resource Planning) conçu dans le cadre d'un projet universitaire, où nous avons adopté des méthodes agiles pour sa réalisation. Nous avons suivi un processus complet, de l'analyse des besoins à la conception, en passant par la planification des sprints et des tâches.
 
-## Available Scripts
+## Contexte
 
-In the project directory, you can run:
+Nous avons commencé par analyser les besoins pour produire des user stories, puis nous avons organisé ces stories en sprints et product backlogs. Les rôles de Scrum Master, Product Owner, etc., ont été attribués pour assurer une gestion efficace du projet.
 
-### `npm start`
+## Fonctionnalités
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Cet ERP permet différentes fonctionnalités, notamment :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Mettre en marche/arrêt les pompes
+- Demander des réapprovisionnements (essence et produit)
+- Délivrer des cartes fidélités et de crédit
+- Gestion des achats, encaissements
+- Consulter et mettre à jour les stocks de produits
+- Être alerté en cas d'incidents
+- Recevoir les directives de la direction régionale
+- Organiser des services entre particulier
 
-### `npm test`
+## Interfaces
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Nous avons conçu deux types de dashboards : un pour l'employé et un pour le gérant, avec des informations spécifiques pour ce dernier. Voici quelques captures d'écran :
 
-### `npm run build`
+### Interface de Connexion
+![Interface de Connexion](https://github.com/RayanOUTILI/ERP_station_service/assets/59539437/c71c2b40-f98f-4ba4-9899-3cc77cf41c56)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Dashboard
+![Dashboard](https://github.com/RayanOUTILI/ERP_station_service/assets/59539437/9548af2c-4020-4f54-9897-0732619f2627)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Composant - État des Cuves
+![État des Cuves](https://github.com/RayanOUTILI/ERP_station_service/assets/59539437/afa5f17f-61ea-44a9-9b18-4756859b78d9)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contraintes de Conception
 
-### `npm run eject`
+Une contrainte de conception majeure était de maintenir la caisse constamment à gauche de l'écran et d'afficher les autres composants sur la partie droite de l'interface. Chaque composant a été conçu pour être extensible, permettant ainsi de remplir toute la partie droite de l'écran au besoin. Cette approche garantit l'accès rapide (en un click) aux fonctionnalités spécifiques de chaque composant tout en conservant la dualité entre la caisse et les autres fonctionnalités de l'ERP.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Utilisées
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Front-end** : ReactJS / CSS
+- **Back-end** : NodeJS avec le Framework Express
+- **Base de données** : PostgreSQL
+- **Hébergement** : Heroku
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
+## Auteurs 
+[Tom Da Costa](https://github.com/Tom-DaCosta)
+[Sabra Essalah](https://github.com/sabraess)
+[Matthieu Griffonnet](https://github.com/Matt-Griff)
+[Rayan Outili](https://github.com/RayanOUTILI)
+[Thomas Portelette](https://github.com/ThomasPorteletteGit)
+[Clara Torri](https://github.com/clarator)
+[Lucas Wallner]()
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
